@@ -1,12 +1,12 @@
 // font family
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 // box icons
 
 @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 
 :root{
-    --bs-body-font-family: 'Mulish', sans-serif;
+    --bs-body-font-family: "Raleway", sans-serif;;
 }
 html{
     @include media-breakpoint-down(sm){
@@ -22,9 +22,21 @@ main{
     }
 }
 a{
-    text-decoration: none;
-    color: $primary;
+    color: $secondary;
+    font-weight: 500;
 }
+.card-link {
+    text-decoration: none;
+    color: transparent;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
 // form
 .form-floating label{
     color: rgb(85, 85, 85);
@@ -51,10 +63,10 @@ a{
 // font sizes
 
 .f18{
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
 }
 .f20{
-    font-size: 1.325rem;
+    font-size: 1.325rem !important;
 }
 
 // background colors
@@ -97,5 +109,69 @@ a{
 .mobReverse{
     @include media-breakpoint-down(lg){
         flex-direction: column-reverse;
+    }
+}
+
+.max-700{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.mb-35{
+    margin-bottom: 35px;
+}
+.mt-35{
+    margin-top: 35px;
+}
+
+.custom-list{
+    .custom-list-title{
+        font-size: 2rem;
+        font-weight: 600;
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 25px;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 5px solid $primary;
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .custom-list-content{
+        padding-left: 50px;
+        ul{
+            padding: 0;
+            list-style-position: inside;
+            li{
+                color: $text-color;
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+                ul{
+                    padding-left: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+        } 
+        p{
+            color: $text-color;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.icon-link{
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    i,svg{
+        font-size: 24px;
+        margin-right: 10px;
     }
 }

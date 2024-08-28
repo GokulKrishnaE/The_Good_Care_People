@@ -47,11 +47,6 @@ $(document).ajaxStop(function(){
     } else {
        $('header').removeClass('header-sticky');
     }
-    if ($(this).scrollTop() > 400) {
-       $('#scrollToTop').addClass('active')
-    } else {
-       $('#scrollToTop').removeClass('active')
-    }
  });
 
  $('#scrollToTop').click(function(e) {
@@ -59,12 +54,6 @@ $(document).ajaxStop(function(){
   $('html, body').animate({ scrollTop: 0 }, 600); // 600ms for smooth scroll
   return false;
 });
-
-$('.navbar-toggler').click(function(){
-  $('body').toggleClass('overflow-hidden')
-})
-
-
 
     
 })

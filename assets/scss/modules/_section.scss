@@ -1,5 +1,5 @@
 .section{
-    padding: 80px 0 80px 0;
+    padding: 120px 0 120px 0;
     @include media-breakpoint-down(sm){
         padding: 30px 0;
     }
@@ -9,8 +9,8 @@
     position: relative;
     color: $primary;
     font-size: 2.3rem;
-    font-weight: 600;
-    margin-bottom: 15px;
+    font-weight: 500;
+    margin-bottom: 35px;
     &.no-border{
         &::before{
             display: none;
@@ -20,19 +20,21 @@
         font-size: 2rem;
     }
 }
+.section-title-2{
+    color: $secondary;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
 .sub-section-title{
     font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
-.content{
-    p{
-        color: $text-color;
-        letter-spacing: 0.5px;
-        line-height: 24px;
-        font-size: 1.1rem;
-    }
+p.section-content{
+    color: $text-color;
+    font-size: 1.1rem;
 }
 
 .side-graphics img{
@@ -63,5 +65,18 @@
 }
 
 .services-section{
-    background-color: #f3faff;
+    // background-color: #f3faff;
+    .custom-list-title{
+        font-size: 1.5rem !important;
+    }
+}
+.graphics-section{
+    .graphics-area{
+        text-align: center;
+        img{
+            max-height: 300px;
+            object-fit: contain;
+            width: 100%;
+        }
+    }
 }
