@@ -9,7 +9,7 @@
         font-size: 1.3rem;
         margin-left: 10px;
     }
-    &:hover{
+    &:not(.noHover):hover{
         transform: scale(1.05);
     }
 }
