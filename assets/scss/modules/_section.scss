@@ -8,8 +8,8 @@
 .section-title{
     position: relative;
     color: $primary;
-    font-size: 2.3rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 400;
     margin-bottom: 35px;
     &.no-border{
         &::before{
@@ -21,9 +21,9 @@
     }
 }
 .section-title-2{
-    color: $secondary;
+    color: $black;
     font-size: 2.3rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 35px;
 }
 .sub-section-title{
@@ -35,6 +35,7 @@
 p.section-content{
     color: $text-color;
     font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .side-graphics img{
@@ -74,9 +75,29 @@ p.section-content{
     .graphics-area{
         text-align: center;
         img{
-            max-height: 300px;
-            object-fit: contain;
+            height: 300px;
+            object-fit: cover;
             width: 100%;
+            max-width: 600px;
+            clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+            filter: opacity(0.9);;
         }
+    }
+}
+
+.circleImage{
+    margin: 0 auto 30px;
+    max-width: 300px;
+    opacity: 0.9;
+    clip-path: circle(50% at 50% 50%);
+    @include media-breakpoint-down(md){
+        max-width: 200px;
+    }
+}
+
+.servicesImage{
+    max-height: 500px;
+    @include media-breakpoint-down(md){
+        margin-bottom: 30px;
     }
 }

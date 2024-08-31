@@ -45,21 +45,24 @@
         border: none;
         align-items: center;
         &.card-1{
-            color: $white;
-            background-color: $secondary;
+            color: $black;
+            background-color: #ffeadf;
+            border: 1px solid #f5874f;
         }
         &.card-2{
-            color: $white;
-            background-color: $primary;
+            color: #000000;
+            background-color: #c8e9ff;
+            border: 1px solid #1082cf;
         }
         &.card-3{
-            color: $white;
-            background-color: $tertiary;
+            color: #000000;
+            background-color: #ceffe8;
+            border: 1px solid #00a859;
         }
     }
     .card-title{
         font-size: 1.3rem;
-        font-weight: 700;
+        font-weight: 400;
         margin: 0;
         a{
             text-decoration: none;

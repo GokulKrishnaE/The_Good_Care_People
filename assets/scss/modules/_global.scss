@@ -1,16 +1,16 @@
 // font family
-@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 // box icons
 
 @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 
 :root{
-    --bs-body-font-family: "Raleway", sans-serif;;
+    --bs-body-font-family:  "Work Sans", sans-serif;
 }
 html{
     @include media-breakpoint-down(sm){
-        font-size: 90%;
+        font-size: 85%;
     }
 }
 main{
@@ -22,7 +22,7 @@ main{
     }
 }
 a{
-    color: $secondary;
+    color: $primary;
     font-weight: 500;
 }
 .card-link {
@@ -31,9 +31,9 @@ a{
     margin: 0;
     display: inline-block;
     width: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:hover {
-        transform: translateY(-5px);
+        transform: translateY(-2px);
     }
 }
 

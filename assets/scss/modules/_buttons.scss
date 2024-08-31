@@ -1,7 +1,6 @@
 .btn{
     padding: 12px 30px;
     border-radius: 8px;
-    letter-spacing: 0.5px;
     transition: all 0.2s ease-out;
     font-size: 1.1rem;
     font-weight: 600;
@@ -10,18 +9,20 @@
         margin-left: 10px;
     }
     &:not(.noHover):hover{
-        transform: scale(1.05);
+        transform: translateY(-2px);
     }
 }
 .btn-primary{
-    background-color: $primary !important;
-    border-color: $primary !important;
+    background-color: #54a2ff !important;
+    border-color: #54baff !important;
     color: #ffffff !important;
+    box-shadow: 0 5px 10px -5px #54baff;
 }
 .btn-secondary{
-    background-color: $secondary !important;
-    border-color: $secondary !important;
-    color: #ffffff !important;
+    background-color: #ff9058 !important;
+    border-color: #ff9058 !important;
+    color: #fff !important;
+    box-shadow: 0 5px 10px -5px #ff9058;
 }
 .btn-outline-primary{
     background-color: transparent !important;
